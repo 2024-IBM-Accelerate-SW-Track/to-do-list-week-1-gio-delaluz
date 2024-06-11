@@ -44,12 +44,14 @@ class AddTodo extends Component {
             // Fundamental to handling states
             onChange = {this.handleChange}
             value = {this.state.content}
+            data-testid="new-item-textfield"
           />
           <Button
             style={{ marginLeft: "10px" }}
             onClick={this.handleSubmit} // call to handle submit
             variant="contained"
             color="primary"
+            data-testid="new-item-button"
           >
             Add
           </Button>
